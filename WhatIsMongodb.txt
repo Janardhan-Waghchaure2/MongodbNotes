@@ -1,1 +1,6 @@
 1. mongo is a document db.
+
+2. a single mongodb contains multiple collections.
+   collections -> like tables in sql.
+   documents -> a single entry of data/equivalent to rows of sql.
+   fields -> equivalent to columns in sql.
