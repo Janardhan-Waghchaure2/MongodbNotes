@@ -3,4 +3,6 @@
 2. a single mongodb contains multiple collections.
    collections -> like tables in sql.
    documents -> a single entry of data/equivalent to rows of sql.
+             -> looks like json object
+
    fields -> equivalent to columns in sql.
