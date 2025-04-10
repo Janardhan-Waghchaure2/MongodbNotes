@@ -8,3 +8,6 @@
    fields -> equivalent to columns in sql.
 
    db -> collections -> documents -> fields.
+
+3. mongo don't need to have fixed schema. 
+   i.e 2 documents can have different fields init.
