@@ -6,3 +6,5 @@
              -> looks like json object
 
    fields -> equivalent to columns in sql.
+
+   db -> collections -> documents -> fields.
