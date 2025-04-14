@@ -1,0 +1,13 @@
+1. db.collection.find({}); //-> return all documents
+
+2. db.collection.find({ age: { $gt: 25 } }) // -> return all documents with age > 25
+
+3. db.collection.find({}, { name: 1, age: 1, _id: 0 }) // return all docs with fields except id field(set to 0)
+
+4. db.collection.find({ age: { $gt: 25 }, city: "New York" })// multiple condition age > 25 and city = new york
+
+5. db.collection.find({ name: { $regex: "^A", $options: "i" } })// regex matching , select all docs with name ending with a(case insensative/"i flag")
+
+6. db.collection.find().sort({ age: -1 }) // Sorts results by age in descending order.
+
+7. db.collection.find().limit(5) // to limit the result documents/rows
