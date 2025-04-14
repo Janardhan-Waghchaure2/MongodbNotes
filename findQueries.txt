@@ -11,3 +11,22 @@
 6. db.collection.find().sort({ age: -1 }) // Sorts results by age in descending order.
 
 7. db.collection.find().limit(5) // to limit the result documents/rows
+
+8. db.collection.find({ $or: [{ age: { $gt: 30 } }, { city: "New York" }] }) // logical or (age > 30 OR city = 'New York') 
+
+9. db.collection.find({ $and: [{ age: { $gt: 30 } }, { city: "New York" }] }) // logical and (age > 30 AND city = 'New york')
+
+10. db.collection.find({ email: { $exists: true } }) // check for field existance(return the doc in email field exists)
+
+11. db.collection.find({ age: { $type: "int" } }) // Retrieves documents where age is stored as an integer.
+
+12. db.collection.find({ scores: { $elemMatch: { subject: "Math", score: { $gt: 90 } } } }) // Finds documents where the scores array contains an entry 
+    with subject: Math and score > 90.
+
+13. db.collection.find({ city: { $in: ["New York", "Los Angeles", "Chicago"] } }) // filter result by checking if field lies in given list(city lies in given array)
+
+14. db.collection.find({ age: { $mod: [2, 0] } }) // Finds documents where age is an even number.
+
+15. db.collection.find({ tags: { $size: 3 } }) // Retrieves documents where the tags array has exactly 3 elements.
+
+16. db.collection.find({ tags: { $all: ["tech", "mongodb"] } }) // Finds documents where the tags array contains both "tech" and "mongodb".
