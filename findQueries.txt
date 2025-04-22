@@ -1,3 +1,5 @@
+0. db.collection.find(filter_obj , projection_obj);
+
 1. db.collection.find({}); //-> return all documents
 
 2. db.collection.find({ age: { $gt: 25 } }) // -> return all documents with age > 25
