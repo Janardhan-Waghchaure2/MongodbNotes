@@ -4,3 +4,31 @@ Unlike traditional relational databases, MongoDB uses JSON-like BSON documents i
 
 2. Whats nosql?
 nosql -> not only sql , nosql means it can handle structured , semistrucured , no-structured data.
+
+3. diff between RDBMS/SQL vs NOSQL?
+    
+    ### **1. Data Model**
+    | Feature      | RDBMS (SQL) | NoSQL |
+    |-------------|------------|--------|
+    | **Structure** | Fixed schema (tables, rows, columns) | Flexible schema (documents, key-value, graph, column-family) |
+    | **Relationships** | Uses joins for relational data | No joins; uses embedded/nested documents |
+    
+    ### **2. Scalability**
+    | Feature      | RDBMS (SQL) | NoSQL |
+    |-------------|------------|--------|
+    | **Scaling Type** | Vertical scaling (adding resources to a single server) | Horizontal scaling (distributing across multiple servers) |
+    | **Performance** | Can slow down with large datasets due to joins | Faster reads/writes with distributed systems |
+    
+    ### **3. Transactions & Consistency**
+    | Feature      | RDBMS (SQL) | NoSQL |
+    |-------------|------------|--------|
+    | **ACID Compliance** | Fully ACID (Atomicity, Consistency, Isolation, Durability) | May prioritize eventual consistency over strict ACID |
+    | **Use Case** | Banking, inventory, financial apps | Social media, big data, IoT, real-time apps |
+    
+    ### **4. Examples**
+    - **RDBMS**: MySQL, PostgreSQL, SQL Server, Oracle
+    - **NoSQL**: MongoDB (Document), Cassandra (Column-family), Redis (Key-value), Neo4j (Graph)
+    
+    ### **5. When to Use Which?**
+    - ✅ **Use SQL when**: You need **strict consistency**, structured relationships, and transactions (e.g., banking, financial records).
+    - ✅ **Use NoSQL when**: You need **fast reads/writes**, flexibility, and scalability for big data (e.g., real-time apps, social media).
