@@ -1,3 +1,6 @@
 1. What is MongoDB?
 MongoDB is a opensource NoSQL database that stores data in a flexible, document-oriented format. 
 Unlike traditional relational databases, MongoDB uses JSON-like BSON documents instead of tables and rows.
+
+2. Whats nosql?
+nosql -> not only sql , nosql means it can handle structured , semistrucured , no-structured data.
