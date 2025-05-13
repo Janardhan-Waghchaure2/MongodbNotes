@@ -1,0 +1,3 @@
+1. What is MongoDB?
+MongoDB is a NoSQL database that stores data in a flexible, document-oriented format. 
+Unlike traditional relational databases, MongoDB uses JSON-like BSON documents instead of tables and rows.
